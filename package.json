@@ -1,7 +1,6 @@
 {
   "name": "blog-admin",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyad188/blog-admin-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ziyad188/blog-admin-panel/issues"
+  },
+  "homepage": "https://github.com/ziyad188/blog-admin-panel#readme",
+  "description": ""
 }

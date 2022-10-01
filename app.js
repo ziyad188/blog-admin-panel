@@ -42,12 +42,13 @@ app.get("/", (req, res) => {
     });
     
 });
+
 app.post("/blog", function(req,res){
     var u = req.body.id;
-    res.redirect("/"+u);
+    res.redirect("/blogs/"+u);
     
 })
-app.get("/:postId", function(req,res){
+app.get("/blogs/:postId", function(req,res){
     var reqPostId = req.params.postId;
     postModel.findOne({_id:reqPostId}, function(err,post){
         if(!err){

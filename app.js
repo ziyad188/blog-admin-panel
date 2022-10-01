@@ -100,6 +100,6 @@ app.post('/', upload.single('image'), (req, res, next) => {
     });
 });
 
-app.listen("3000", function(){
+app.listen(process.env.PORT||"3000", function(){
     console.log("server is listening at port 3000");
 })

@@ -32,10 +32,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                 </div>
                 <!-- loop -->
-                <%items.forEach(function(item){%>
+               
 
                 <div class="block-content">
+                    <%items.forEach(function(item){%>
                     <div class="clean-blog-post">
+                       
                         <div class="row">
                             <div class="col-lg-5"><img class="rounded img-fluid" src="data:image/<%=item.img.contentType%>;base64,
                                 <%=item.img.data.toString('base64')%>"></div>
@@ -45,8 +47,10 @@
                                 <p><%=item.tagline%></p><form action="/blog" method="POST"><button class="btn btn-outline-primary btn-sm" type="submit" name="id" value="<%=item._id%>">Read More</button></form>
                             </div>
                         </div>
+                        
                     </div>
                     <%})%>
+                  
                     <!-- loop end -->
                     
                 </div>
